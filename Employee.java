@@ -1,10 +1,38 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Employee {
+public class Employee implements Comparable<Employee> {
     int eid;
 	String name;
 	double salary;
+	
+	
+	@Override
+	public int compareTo(Employee e2) {
+		
+		/*
+		 * if(this.eid>e2.eid) return 1; else if(this.eid<e2.eid) return -1; else
+		 * 
+		 * return 0;
+		 */
+		
+		
+		/*
+		 * if(this.salary>e2.salary) return -1; else if(this.salary<e2.salary) return 1;
+		 * else
+		 * 
+		 * return 0;
+		 */
+		
+		return (this.name).compareTo(e2.name);
+			
+		
+		
+		
+		
+		
+	}
+	
 	
 		public Employee(int eid, String name, double salary) {
 		super();
@@ -99,5 +127,7 @@ public class Employee {
       
       
 	}
+
+	
 
 }
