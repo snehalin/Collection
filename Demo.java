@@ -10,15 +10,22 @@ java.util
 
 		     Iterable(I)<---- java.lang
                |
-            Collection(I)                               Map(I)
+            Collection(I) (1.2)                              Map(I)
               /   |      \                                  |
         List(I) Set(I) Queue(I)                         HashMap(c)
           |       |           \                         LinkedHashMap(c)
    ArrayList(c)  HashSet(c)    ArrayDeque(c)            TreeMap(c)
    LinkedList(c) LinkedHashSet(c)  PriorityQueue(c)
-   Vector(c)     TreeSet(c)
+   Vector(c) (1.0)    TreeSet(c)
        |
    Stack(c)
+   
+   
+   Legacy Classes---Vector,Stack,HashTable,Enumerator
+   ThreadSafe
+   
+       
+   Cursors-->Iterator,ListIterator,Enumeration,Spliterator
 */
 
 

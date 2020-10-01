@@ -20,8 +20,9 @@ public class ArrayListDemo {
         a1.add(null);
         a1.add(1.2f);
         a1.add(3,"hii");
+        a1.add(1);
     ////    a1.capacity();
-        
+       System.out.println("a1.remove(1)="+a1.remove("Hello"));
         System.out.println(a1);
         System.out.println("Size="+a1.size());
        System.out.println("a1.contains(Hello)="+a1.contains("Hello"));
