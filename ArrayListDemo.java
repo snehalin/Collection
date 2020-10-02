@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 //Heterogeneous
 //duplication allowed
@@ -24,6 +25,8 @@ public class ArrayListDemo {
     ////    a1.capacity();
        System.out.println("a1.remove(1)="+a1.remove("Hello"));
         System.out.println(a1);
+        Collections.shuffle(a1);
+        System.out.println("After Shuffle:\n"+a1);
         System.out.println("Size="+a1.size());
        System.out.println("a1.contains(Hello)="+a1.contains("Hello"));
        System.out.println("a1.contains(10)="+a1.contains(10));
