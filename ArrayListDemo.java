@@ -1,78 +1,65 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Iterator;
-//Heterogeneous
-//duplication allowed
-//Insertion order preserved
-//null value allowed
-//based on Array datastructure
-//Frequent operation access and retrive
-public class ArrayListDemo {
 
+public class ArrayListDemo {
+//It is heterogeneous,duplication allowed,isertion order is preserve,
+//null is allowed,based on Dynamic Array datastructure,
+	//If frequent operation retrival of element
+	
 	public static void main(String[] args) {
-		ArrayList a1=new ArrayList();//16 
+		ArrayList l1=new ArrayList();
+		System.out.println(l1.isEmpty());
+		l1.add(13); //Integer i =new Integer(13); l1.add(i); autoboxing
 		
-        boolean b=a1.isEmpty();
-        System.out.println("b="+b);
-        a1.add(10);// Integer i=new Integer(10); a1.add(i);
-        a1.add(1.2f);
-        a1.add("Hello");
-        a1.add(10);
-        a1.add(null);
-        a1.add(1.2f);
-        a1.add(3,"hii");
-        a1.add(1);
-    ////    a1.capacity();
-       System.out.println("a1.remove(1)="+a1.remove("Hello"));
-        System.out.println(a1);
-        Collections.shuffle(a1);
-        System.out.println("After Shuffle:\n"+a1);
-        System.out.println("Size="+a1.size());
-       System.out.println("a1.contains(Hello)="+a1.contains("Hello"));
-       System.out.println("a1.contains(10)="+a1.contains(10));
-       System.out.println("a1.LastindexOf(1.2f)="+a1.lastIndexOf(1.2f));
-       
-       System.out.println("a1.get(2)"+a1.get(2));
-       System.out.println("a1.set(2)"+a1.set(2,"hii"));
-       System.out.println(a1);
-       
-       
-       for(int i=0;i<a1.size();i++)
-       {
-    	   System.out.println(a1.get(i));
-    	   
-       }
-       
-       
-       ArrayList a2=new ArrayList(20);
-       a2.add(3.4);
-       a2.add("bye");
-       a2.addAll(a1);
-       
-       System.out.println("a2 elements");
-       for(int i=0;i<a2.size();i++)
-       {
-    	   System.out.println(a2.get(i));
-    	   
-       }
-       System.out.println("a2.removeAll(a1)="+a2.removeAll(a1));
-      // System.out.println("a2.retainAll(a1)="+a2.retainAll(a1));
-       System.out.println(a2);
-       
-       ArrayList <Integer> a3=new <Integer>ArrayList();
-       
-      // a3.add(1.2f);
-      System.out.println("___________________________"); 
-       Iterator i	=a1.iterator();
-   	while(i.hasNext())
-   	{
-   	System.out.println(i.next());
-   	}
-       
-       
-       
-       
-       
+		l1.add("hello");
+		l1.add(1.2f);
+		l1.add('s');
+		l1.add(13);
+		l1.add(null);
+		
+		l1.add(2,'j');
+		ArrayList l2=new ArrayList();
+		l2.addAll(l1);
+		System.out.println(l2);
+		l2.add("hefshine");
+		l2.add(100);
+		System.out.println(l2);
+		l2.retainAll(l1);
+		System.out.println(l2);
+		
+		System.out.println("l2.get(3)="+l2.get(3));
+		l2.set(4,"pune");
+		System.out.println(l2);
+		System.out.println("-------Forloop----------------");
+		for(int i=0;i<l2.size();i++)
+			System.out.println(l2.get(i));
+	
+		System.out.println("-------Iterator----------------");
+		
+		Iterator j=l2.iterator();
+		while(j.hasNext())
+		{
+		System.out.println(j.next());
+		}
+		
+		
+		
+		
+/*	boolean b=l2.contains(13);
+	System.out.println(b);
+	
+	System.out.println("l2.indexOf(1.2f)="+l2.indexOf(1.2f));
+	System.out.println("l2.lastIndexOf(13)="+l2.lastIndexOf(13));
+	
+	Object ob[]=l2.toArray();
+	
+	for(int i=0;i<ob.length;i++)
+	{
+		System.out.print(ob[i]+" ");
+	}
+	
+	//l2.remove(10); Exception*/
+	
 	}
 
 }
