@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 
 public class ArrayListDemo {
@@ -18,6 +19,9 @@ public class ArrayListDemo {
 		l1.add(null);
 		
 		l1.add(2,'j');
+		System.out.println(l1);
+		Collections.shuffle(l1);
+		System.out.println(l1);
 		ArrayList l2=new ArrayList();
 		l2.addAll(l1);
 		System.out.println(l2);

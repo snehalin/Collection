@@ -1,11 +1,11 @@
 import java.util.Comparator;
 
-public class NameComparator implements Comparator<Employee> {
+public class NameComparator implements Comparator<Employee>{
 
 	@Override
-	public int compare(Employee e1, Employee e2) {
-		 return e1.name.compareTo(e2.name);
+	public int compare(Employee o1, Employee o2) {
 		
+		return o1.name.compareTo(o2.name);
 	}
 
 }
